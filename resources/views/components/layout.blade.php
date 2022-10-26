@@ -11,13 +11,16 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
     <div class="sidebar">
-      <img src="/assets/images/logo.png" alt="">
+      <img src="/assets/images/logo.png" alt="Logo Todork" class="desktop">
+      <img src="/assets/images/logo-horizontal.png" alt="Logo Todork" class="mobile">
     </div>
     <div class="content">
       <nav>
-        {{$btn ?? null}}
+        <a href="#" class="btn btn-primary">
+          Criar Tarefa
+        </a>
       </nav>
       <main>
         {{$slot}}
